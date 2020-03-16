@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100i,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.css" />
@@ -19,14 +20,8 @@
         </div>
         <div class="col-lg-8 col-md-7">
           <div class="d-flex flex-column">
-            <div class="p-5 bg-dark text-white">
-              <div class="name d-flex flex-row  justify-content-between align-items-center">
-                <h2 class="display-4">Rakesh Kadam</h2>
-                <div><a href="https://codepen.io/Rakeshkadam"><i class="fa fa-codepen"></i></a></div>
-                <div><a href="https://www.facebook.com/rakesh.kadam.1291421" target="blank"><i class="fa fa-facebook"></i></a></div>
-                <div ><a href="https://www.instagram.com/__raka._/" target="blank"><i class="fa fa-instagram"></i></a></div>
-                <div ><a href="https://github.com/Rakeshkadam" target="blank"><i class="fa fa-github"></i></a></div>
-              </div>
+            <div class="d-flex flex-row py-5 pl-3 bg-dark text-white">
+                <h3 class="main-heading">Hii I'm Rakesh Kadam</h3>
             </div>
 
             <div class="p-4 bg-black">
@@ -141,7 +136,6 @@
 
       <div class="card card-body py-5">
         <h3>What have I built?</h3>
-        <p>Here are some of my work. Please have a look.</p>
         <div class="row">
           <div class="col-md-4">
             <a href="https://musicsolution.netlify.com/">
@@ -204,10 +198,16 @@
     <!-- FOOTER -->
     <footer id="main-footer" class="p-5 bg-dark text-white">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-9 col-sm-4 mb-3">
             <form method="get" action="Rakesh Kadam Resume Updated.pdf">
           <button type="submit" class="btn btn-outline-light"><i class="fa fa-cloud"></i> Download Resume</button>
            </form>
+        </div>
+        <div class="col-md-3 d-flex justify-content-between">
+          <div class="d-flex"><a href="https://codepen.io/Rakeshkadam"><i class="fa fa-codepen"></i></a></div>
+          <div class="d-flex"><a href="https://www.facebook.com/rakesh.kadam.1291421" target="blank"><i class="fa fa-facebook"></i></a></div>
+          <div class="d-flex"><a href="https://www.instagram.com/__raka._/" target="blank"><i class="fa fa-instagram"></i></a></div>
+          <div class="d-flex"><a href="https://github.com/Rakeshkadam" target="blank"><i class="fa fa-github"></i></a></div>      
         </div>
       </div>
     </footer>
@@ -220,11 +220,6 @@
   <script>
     $('.port-item').click(function(){
       $('.collapse').collapse('hide');
-    });
-
-    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
     });
   </script>
 </body>
